@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MyApp</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <link  rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div>
+  <header>
+   <h1> margin collapse cases</h1>
+  </header>
+  
+  <section>
+    <h3> It happens only for block level elements - vertical siblings Margin collapse/Inspect and see in console the orange patch around element</h3>
+
+      <p class="sibling1">Sibling1</p>
+      <p class="sibling2">Sibling 2</p>
+  </section>
+  
+
+  <section>
+      <h3>Parent child margin collapse/ If parent has border/content it is not working</h3> 
+      <div class="parent">
+        <h1 class="child"> child</h1>
+      </div>
+     
+  </section>
+
+  <section>
+    <h3>Empty elements (with content margin collapse doesnt happen) - Finally, both the top and bottom margins on a single element may collapse if the element has a computed height of 0, i.e. if it is an empty element.</h3>
+    
+    <p class="before">This paragraph is before the empty element</p>
+    <div class="empty"> I am an empty element</div>
+    <p class="after">This paragraph is after the empty element</p>
+    <br>
+    <br>
+    <p class="before">This paragraph is before the empty element</p>
+    <div class="noContent_empty"></div>
+    <p class="after">This paragraph is after the empty element</p>
+
+
+  </section>
+  <footer>
+    
+  </footer>
+</div>
+
+</body>
+</html>
